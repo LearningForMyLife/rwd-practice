@@ -1,0 +1,34 @@
+@media (max-width: 1380px) {
+    .section {
+        width: 800px;
+        height: 570px;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .block:nth-child(1) {
+        width: 100%;
+        height: calc(100% / 2);
+        float: unset;
+        margin-bottom: 10px;
+    }
+
+    .block:nth-child(2) {
+        width: calc(calc(100% - 10px) / 2);
+        height: calc(calc(100% / 2) - 10px);
+        /* 先初始化原本的margin設定，再加上需要的margin */
+        margin: 0;
+        margin-right: 10px;
+    }
+
+    .block:nth-child(3) {
+        width: calc(calc(100% - 10px) / 2);
+        height: calc(calc(100% / 2) - 10px);
+    }
+    .b-content {
+        height: 30%;
+        bottom: -30%;
+    }
+}
